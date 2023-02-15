@@ -11,7 +11,7 @@ import uploadRouter from './routes/uploadRoutes.js';
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect("mongodb+srv://hackathon:password1157@cluster0.8dsrxkv.mongodb.net/hackathon?retryWrites=true&w=majority")
   .then(() => {
     console.log('connected to db');
   })
